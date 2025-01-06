@@ -4,6 +4,8 @@
 
 Cette application basée sur **Spring Boot** et **WebFlux** offre des fonctionnalités avancées telles que la gestion des créneaux horaires, la gestion des commandes, et une authentification sécurisée avec JWT. Elle est conçue pour être performante et extensible.
 
+ Lien de la documentation : http://localhost:8089/swagger-ui/index.htm
+
 ---
 
 ## **Fonctionnalités**
@@ -39,6 +41,31 @@ Cette application basée sur **Spring Boot** et **WebFlux** offre des fonctionna
 
 ---
 
+## **Détails techniques du projet :**
+
+### **Implémentation des principes HATEOAS :**
+- Intégration des hypermédias dans les réponses de l'API REST pour améliorer la navigabilité des endpoints.
+
+### **Sécurisation de l'API avec Spring Security et JWT :**
+- Authentification via JWT avec des utilisateurs de test intégrés.
+  - **Utilisateur de test :**
+    - **Username** : `user`
+    - **Password** : `password`
+
+### **Utilisation de WebFlux pour une solution réactive :**
+- Gestion non-bloquante des flux de données pour des performances accrues.
+
+### **Documentation de l'API REST :**
+- Utilisation de Springdoc OpenAPI pour générer et exposer une documentation Swagger interactive.
+
+### **Proposition de persistance des données :**
+- Intégration de **R2DBC** pour une approche réactive avec une base de données relationnelle.
+
+### **Dockerisation de l’application :**
+- Création d’un fichier Docker et d’une configuration Docker Compose pour simplifier le déploiement.
+
+---
+
 ## **Installation**
 
 ### **Prérequis**
@@ -54,3 +81,4 @@ Cette application basée sur **Spring Boot** et **WebFlux** offre des fonctionna
 2. Exécuter l'application :
    ```bash
    java -jar target/delivery-0.0.1-SNAPSHOT.jar
+
