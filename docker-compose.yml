@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: delivery-app:latest # Specify the image name
+    container_name: spring-boot-app
+    ports:
+      - "8080:8080" # Map local port 8080 to container port 8080
